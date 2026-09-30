@@ -1,0 +1,127 @@
+.im {
+    display: flex;
+    gap: 200px;
+
+
+}
+
+.im img {
+    border-radius: 8px;
+
+
+}
+
+:root {
+    --text: #3D3028;           /* обычный текст */
+    --heading: #5A3E2B;        /* заголовки */
+    --background: #F5EFE6;     /* фон */
+    --card: #EDE1D0;           /* карточки */
+    --button: #E6C89C;         /* кнопки */
+    --border: #B89B72;         /* рамки */
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.hea88der {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 221px;
+      background-color: #EBE5DC;
+      display: flex;
+      align-items: center;
+}
+
+.h888888eader h1 {
+    margin: 0;
+    padding-top: 50px;
+    font-size: 90px;
+}
+
+.log8o {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-left: 15px;
+}
+
+.log98o img {
+    width: 200px;
+    height: 200px;
+}
+
+.log67o h1 {
+    margin: 0;
+    padding-left: 200px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+}.site-header {
+    width: 100%;
+    min-height: 180px;
+
+    background-color: #6B4F3A;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 60px;
+
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    display: block;
+}
+
+.site-header h1 {
+    margin: 0 0 0 35px;
+
+    font-family: "Alfa Slab One", serif;
+    font-size: clamp(42px, 5vw, 76px);
+    font-weight: 400;
+    line-height: 1.1;
+
+    color: #FFFFFF;
+}
+
+.github-link {
+    margin-left: auto;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.github-link img {
+    width: 42px;
+    height: 42px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.github-link:hover img {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
