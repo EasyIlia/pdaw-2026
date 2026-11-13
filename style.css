@@ -1,8 +1,9 @@
 
-/* ОСНОВНЫЕ СТИЛИ СТРАНИЦЫ */
+/* ОБЩИЕ СТИЛИ САЙТА */
 
+/* ОСНОВНЫЕ СТИЛИ */
 body {
-    margin: 0; 
+    margin: 0;
     background-color: #fffefa;
     color: #2e251f;
     font-family: Arial, sans-serif;
@@ -10,151 +11,62 @@ body {
 
 
 /* ШАПКА САЙТА */
-.header {
+
+.site-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px 5%;
+    gap: 20px;
+
+    width: 100%;
+    min-height: 130px;
+    padding: 15px 5%;
+
     background-color: #6B4F3A;
-    color: white;
-    position: relative; 
 }
 
-/* Название сайта и иконка кота */
-.site-title {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
+
+/* ЛОГОТИП */
 
 .logo {
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
 }
 
-.header h1 {
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* НАЗВАНИЕ САЙТА */
+
+.site-header h1 {
+    color: white;
     font-size: 36px;
+    font-weight: bold;
+    text-align: center;
 }
 
-/* Иконка GitHub */
+
+/* ССЫЛКА НА GITHUB */
+
 .github-link {
     position: absolute;
     right: 5%;
-    display: flex;
-    align-items: center;
 }
 
-.github-icon {
-    width: 60px;
-    height: 60px;
-}
-/* ВСТУПЛЕНИЕ */
-
-.intro {
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    align-items: center;
-    gap: 35px;
-    margin: 50px auto;
-    padding: 0 5%;
-    max-width: 1100px;
-}
-
-.intro-text h2 {
-    color: #5b4030;
-    font-size: 32px;
-}
-
-.intro-text p {
-    font-size: 17px;
-    line-height: 1.7; 
+.github-link img {
+    width: 45px;
+    height: 45px;
 }
 
 
-/* КНОПКА-ССЫЛКА */
+/* ПОДВАЛ САЙТА */
 
-.button {
-    display: inline-block; 
-    margin-top: 10px;
-    padding: 10px 16px;
-    background-color: #5b4030;
-    border: 2px solid #5b4030;
-    color: white;
-    text-decoration: none; 
-}
-
-/* Меняем оформление при наведении курсора */
-.button:hover {
-    background-color: white;
-    color: #5b4030;
-}
-
-
-/* ГЛАВНАЯ ФОТОГРАФИЯ */
-
-.main-cat {
-    width: 100%; 
-    height: 300px;
-    object-fit: cover; 
-    border: 5px solid #ead8c2;
-}
-
-
-/* РАЗДЕЛЫ САЙТА */
-
-.sections {
-    margin: 60px auto;
-    padding: 0 5%;
-    max-width: 1100px;
-}
-
-.sections h2 {
-    color: #5b4030;
-    font-size: 32px;
-    text-align: center;
-}
-
-.description {
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-
-/* КАРТОЧКИ */
-
-.card-container {
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    gap: 20px; 
-}
-
-.card {
-    padding: 20px; 
-    border: 2px solid #bd9565;
-    background-color: white;
-}
-
-.card h3 {
-    color: #5b4030;
-}
-
-.card p {
-    line-height: 1.6;
-}
-
-.card a {
-    color: #80552f;
-    font-weight: bold;
-}
-
-.card a:hover {
-    color: #bd9565;
-}
-
-
-/* ПОДВАЛ */
-
-.footer {
+.footer,
+.site-footer {
     padding: 20px;
     background-color: #6B4F3A;
     color: white;
@@ -162,44 +74,3 @@ body {
 }
 
 
-/* ИЗМЕНЕНИЯ ДЛЯ УЗКОГО ЭКРАНА */
-
-@media (max-width: 700px) {
-
-    .header {
-        gap: 10px;
-        padding: 15px;
-    }
-
-    .logo {
-        width: 50px;
-        height: 50px;
-    }
-
-    .header h1 {
-        font-size: 22px;
-    }
-
-    .intro {
-        grid-template-columns: 1fr; 
-        gap: 20px;
-        margin: 30px auto;
-    }
-
-    .intro-text h2 {
-        font-size: 27px;
-    }
-
-    .main-cat {
-        height: auto;
-    }
-
-    .card-container {
-        grid-template-columns: 1fr; 
-    }
-}
-/* Иконка GitHub в шапке */
-.github-icon {
-    width: 40px;
-    height: 40px;
-}
