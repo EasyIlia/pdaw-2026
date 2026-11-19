@@ -73,4 +73,39 @@ body {
     text-align: center;
 }
 
+/* Telephone */
+@media (max-width: 700px) {
+
+    .site-header {
+        display: grid;
+        grid-template-columns: 55px minmax(0, 1fr) 40px;
+        align-items: center;
+        gap: 10px;
+        box-sizing: border-box;
+        min-height: 120px;
+        padding: 15px 12px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .site-header h1 {
+        margin: 0;
+        font-size: 22px;
+        line-height: 1.2;
+        text-align: center;
+    }
+
+    .github-link {
+        position: static;
+        justify-self: end;
+    }
+
+    .github-link img {
+        width: 38px;
+        height: 38px;
+    }
+}
 
